@@ -132,15 +132,23 @@ namespace MandatoryProject2.MandatoryProject2_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "MandatoryProject2.MainPage";
+            _typeNameTable = new string[7];
+            _typeNameTable[0] = "MandatoryProject2.BlankPage1";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "MandatoryProject2.MainPage";
+            _typeNameTable[4] = "wizardcodebehindxmlns.MainPage1";
+            _typeNameTable[5] = "MandatoryProject2.SeeSubmissions";
+            _typeNameTable[6] = "MandatoryProject2.Winner";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::MandatoryProject2.MainPage);
+            _typeTable = new global::System.Type[7];
+            _typeTable[0] = typeof(global::MandatoryProject2.BlankPage1);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::MandatoryProject2.MainPage);
+            _typeTable[4] = typeof(global::wizardcodebehindxmlns.MainPage1);
+            _typeTable[5] = typeof(global::MandatoryProject2.SeeSubmissions);
+            _typeTable[6] = typeof(global::MandatoryProject2.Winner);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +183,11 @@ namespace MandatoryProject2.MandatoryProject2_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::MandatoryProject2.MainPage(); }
+        private object Activate_0_BlankPage1() { return new global::MandatoryProject2.BlankPage1(); }
+        private object Activate_3_MainPage() { return new global::MandatoryProject2.MainPage(); }
+        private object Activate_4_MainPage1() { return new global::wizardcodebehindxmlns.MainPage1(); }
+        private object Activate_5_SeeSubmissions() { return new global::MandatoryProject2.SeeSubmissions(); }
+        private object Activate_6_Winner() { return new global::MandatoryProject2.Winner(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +199,9 @@ namespace MandatoryProject2.MandatoryProject2_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  MandatoryProject2.MainPage
+            case 0:   //  MandatoryProject2.BlankPage1
                 userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_BlankPage1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -200,6 +212,34 @@ namespace MandatoryProject2.MandatoryProject2_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  MandatoryProject2.MainPage
+                userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  wizardcodebehindxmlns.MainPage1
+                userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_MainPage1;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  MandatoryProject2.SeeSubmissions
+                userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_SeeSubmissions;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  MandatoryProject2.Winner
+                userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_Winner;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

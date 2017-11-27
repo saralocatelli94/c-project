@@ -24336,11 +24336,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sara\\Documents\\5anno\\C#\\MandatoryProject2\\MandatoryProject2\\MandatoryProject2\\MandatoryProject2.csproj",
+      "projectUniqueName": "C:\\Users\\sara\\Documents\\GitHub\\c-sharp-project\\MandatoryProject2\\MandatoryProject2.csproj",
       "projectName": "MandatoryProject2",
-      "projectPath": "C:\\Users\\sara\\Documents\\5anno\\C#\\MandatoryProject2\\MandatoryProject2\\MandatoryProject2\\MandatoryProject2.csproj",
+      "projectPath": "C:\\Users\\sara\\Documents\\GitHub\\c-sharp-project\\MandatoryProject2\\MandatoryProject2.csproj",
       "packagesPath": "C:\\Users\\sara\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sara\\Documents\\5anno\\C#\\MandatoryProject2\\MandatoryProject2\\MandatoryProject2\\obj\\",
+      "outputPath": "C:\\Users\\sara\\Documents\\GitHub\\c-sharp-project\\MandatoryProject2\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

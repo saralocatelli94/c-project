@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>24df9725-518f-4e5e-bfd0-ba2bb6f72cca</PackageIdentityName>
     <PackageIdentityPublisher>CN=sara</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>ABEAD812E68265E3E90BC16B0878E3C3D1A7D945CD8D5351B9F6701441A0EDAD</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>24df9725-518f-4e5e-bfd0-ba2bb6f72cca_1.0.0.0_x86__pfvj52c5bwg9j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>24df9725-518f-4e5e-bfd0-ba2bb6f72cca_pfvj52c5bwg9j!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-26T17:18:59.207</Modified>
+      <Modified>2017-11-27T17:32:03.708</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\bin\x86\Debug\MandatoryProject2.exe">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\MandatoryProject2.exe">
       <PackagePath>entrypoint\MandatoryProject2.exe</PackagePath>
-      <Modified>2017-11-26T17:18:58.716</Modified>
+      <Modified>2017-11-27T17:32:03.095</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sara\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,64 +495,64 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T21:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-11-22T21:42:36.618</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-09-05T19:55:41.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-09-05T19:55:41.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-09-05T19:55:41.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-09-05T19:55:41.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-09-05T19:55:41.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-09-05T19:55:41.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-09-05T19:55:41.671</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\SerialNumber.txt">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\SerialNumber.txt">
       <PackagePath>SerialNumber.txt</PackagePath>
       <Modified>2017-11-26T15:27:57.796</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\bin\x86\Debug\MandatoryProject2.xr.xml">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\MandatoryProject2.xr.xml">
       <PackagePath>MandatoryProject2.xr.xml</PackagePath>
-      <Modified>2017-11-26T12:54:13.096</Modified>
+      <Modified>2017-11-27T17:13:02.741</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-05T20:35:28.806</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-26T15:25:29.605</Modified>
+      <Modified>2017-11-27T17:24:00.406</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\sara\Documents\5anno\C#\MandatoryProject2\MandatoryProject2\MandatoryProject2\bin\x86\Debug\Core\MandatoryProject2.exe">
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\Core\MandatoryProject2.exe">
       <PackagePath>MandatoryProject2.exe</PackagePath>
-      <Modified>2017-11-26T17:18:59.203</Modified>
+      <Modified>2017-11-27T17:32:03.704</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
