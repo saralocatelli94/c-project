@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="MandatoryProject2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MandatoryProject2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFA937EA">
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Margin="123,114,0,0" TextWrapping="Wrap" Text="name" VerticalAlignment="Top" Height="43" Width="246" GotFocus="TextBox_GotFocus"/>
+        <TextBox x:Name="Surname" HorizontalAlignment="Left" Margin="124,201,0,0" TextWrapping="Wrap" Text="surname" VerticalAlignment="Top" Width="247" Height="43" GotFocus="TextBox_GotFocus" />
+        <TextBox x:Name="PhoneNr" HorizontalAlignment="Left" Margin="125,287,0,0" TextWrapping="Wrap" Text="Phone number" VerticalAlignment="Top" Width="246" Height="43" GotFocus="TextBox_GotFocus"/>
+        <Button HorizontalAlignment="Left" Margin="785,430,0,0" VerticalAlignment="Top" Click="Button_Click" Height="55" Width="170" Content="Confirm"/>
+        <Button x:Name="save" Content="Query result" HorizontalAlignment="Left" Margin="915,565,0,0" VerticalAlignment="Top" Click="save_Click" Height="55" Width="170"/>
+        <TextBox x:Name="xmlResult" HorizontalAlignment="Left" TextWrapping="Wrap" Text="XML FILE" VerticalAlignment="Top" RenderTransformOrigin="12.958,4.688" Margin="760,50,0,0" Height="335" Width="395" GotFocus="TextBox_GotFocus"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="125,381,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="246" Height="43" GotFocus="TextBox_GotFocus"/>
+        <TextBox x:Name="SeriaNr" HorizontalAlignment="Left" Margin="126,475,0,0" TextWrapping="Wrap" Text="Serial number" VerticalAlignment="Top" Width="246" Height="46" GotFocus="TextBox_GotFocus"/>
+        <ProgressRing HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <ProgressRing HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="0,0,0,630" Width="105"/>
+        <DatePicker x:Name="Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="419,282,0,0"  />
+
+    </Grid>
+</Page>
