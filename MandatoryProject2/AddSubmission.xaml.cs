@@ -39,19 +39,10 @@ namespace MandatoryProject2
         string imagePath = "";
         public BlankPage1()
         {
-            StorageFolder localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
-            this.InitializeComponent();
-            var path = Path.Combine(localFolder.Path, "SerialNumber.txt");
 
-            if (!File.Exists(path))
-            {
-                serialNr = generateSerialNumbers();
-                saveSerialNumbers(serialNr);
-            }
-            else
-                serialNr = readSerialNumbers();
-            string filename = "table.xml";
-            File.Delete(Path.Combine(localFolder.Path, filename));
+            this.InitializeComponent();
+             
+            serialNr = readSerialNumbers();
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -70,7 +61,7 @@ namespace MandatoryProject2
                 doc = XDocument.Load(file);
                 doc.Root.Add(new XElement("Person",
                     new XElement("name", Name.Text),
-                   new XElement("surname","surname", Surname.Text),
+                   new XElement("surname", Surname.Text),
                    new XElement("Date", s),
                    new XElement("PhoneNr", PhoneNr.Text),
                       new XElement("Email", Email.Text),
@@ -98,7 +89,7 @@ namespace MandatoryProject2
                      new XElement("Subbmissions",
                       new XElement("Person",
                     new XElement("name", Name.Text),
-                   new XElement("surname", "surname", Surname.Text),
+                   new XElement("surname", Surname.Text),
                    new XElement("Date", s),
                    new XElement("PhoneNr", PhoneNr.Text),
                       new XElement("Email", Email.Text),
@@ -216,59 +207,7 @@ namespace MandatoryProject2
         }
 
 
-        private List<String> generateSerialNumbers()
-        {
-            List<String> serialNumbers = new List<string>();
-            Random r = new Random();
-            for (int i = 0; i < 100; i++)
-            {
-                String s = "";
-                for (int j = 0; j < 2; j++)
-                    s = s + randomLetter(r);
-                for (int j = 0; j < 3; j++)
-                    s = s + randomNumber(r);
-                for (int j = 0; j < 2; j++)
-                    s = s + randomLetter(r);
-                s = s + randomNumber(r);
-                for (int j = 0; j < 3; j++)
-                    s = s + randomLetter(r);
-                for (int j = 0; j < 2; j++)
-                    s = s + randomNumber(r);
-                serialNumbers.Add(s);
-
-
-            }
-            return serialNumbers;
-
-        }
-
-        private string randomLetter(Random r)
-        {
-            string chars = "$%#@!*abcdefghijklmnopqrstuvwxyz1234567890?;:ABCDEFGHIJKLMNOPQRSTUVWXYZ^&";
-            int n = r.Next(0, chars.Length - 1);
-            char c = chars[n];
-            return c.ToString();
-        }
-
-        private int randomNumber(Random r)
-        {
-
-            int n = r.Next(0, 9);
-            return n;
-        }
-
-        private async void saveSerialNumbers(List<String> serialNr)
-        {
-            string filename = "SerialNumber.txt";
-            StorageFolder localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
-            StorageFile file = await localFolder.CreateFileAsync(filename, CreationCollisionOption.ReplaceExisting);
-
-            for (int i = 0; i < serialNr.Count; i++)
-                await FileIO.AppendTextAsync(file, (serialNr.ElementAt(i) + "\n"));
-
-
-        }
-
+       
         private List<string> readSerialNumbers()
         {
             List<String> serialNr = new List<String>();
@@ -301,7 +240,15 @@ namespace MandatoryProject2
             StorageFile sf = await picker.PickSingleFileAsync();
             if (sf != null)
             {
-                imagePath = sf.Path;
+                try
+                {
+
+                    await sf.CopyAsync(ApplicationData.Current.LocalFolder);
+                }catch(Exception)
+                {
+                    
+                }
+                imagePath = Path.GetFileName(sf.Path); 
                 Windows.Storage.Streams.IRandomAccessStream stream = await sf.OpenAsync(FileAccessMode.Read);
                 BitmapImage bm = new BitmapImage();
                 bm.SetSource(stream);

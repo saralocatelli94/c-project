@@ -448,3 +448,13 @@ C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\S
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\Winner.xaml
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\SeeSubmissions.xbf
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\Winner.xbf
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\10Submissions.g.i.cs
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\10Submissions.g.cs
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\10Submissions.xaml
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\10Submissions.xbf
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\10Submissions.xbf
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\SubmissionsView.xbf
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\SubmissionsView.g.i.cs
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\SubmissionsView.g.cs
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\SubmissionsView.xaml
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\SubmissionsView.xbf

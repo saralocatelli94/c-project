@@ -14,6 +14,7 @@
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
     </RootType>
+    <RootType FullName="MandatoryProject2._10Submissions" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -88,6 +89,7 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="FontWeight" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
@@ -98,6 +100,7 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="wizardcodebehindxmlns.MainPage1" />
     <RootType FullName="MandatoryProject2.SeeSubmissions" />
+    <RootType FullName="MandatoryProject2.SubmissionsView" />
     <RootType FullName="MandatoryProject2.Winner" />
   </Roots.RootTypes>
 </Roots>

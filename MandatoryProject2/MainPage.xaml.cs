@@ -35,14 +35,78 @@ namespace MandatoryProject2
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        List<String> serialNr;
 
         public MainPage()
         {
-
-
+            StorageFolder localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
             this.InitializeComponent();
+            var path = Path.Combine(localFolder.Path, "SerialNumber.txt");
+
+            if (!File.Exists(path))
+            {
+                serialNr = generateSerialNumbers();
+                saveSerialNumbers(serialNr);
+            }
+           
+            string filename = "table.xml";
+            File.Delete(Path.Combine(localFolder.Path, filename));
+
             myFrame.Navigate(typeof(BlankPage1));
         }
+        private List<String> generateSerialNumbers()
+        {
+            List<String> serialNumbers = new List<string>();
+            Random r = new Random();
+            for (int i = 0; i < 100; i++)
+            {
+                String s = "";
+                for (int j = 0; j < 2; j++)
+                    s = s + randomLetter(r);
+                for (int j = 0; j < 3; j++)
+                    s = s + randomNumber(r);
+                for (int j = 0; j < 2; j++)
+                    s = s + randomLetter(r);
+                s = s + randomNumber(r);
+                for (int j = 0; j < 3; j++)
+                    s = s + randomLetter(r);
+                for (int j = 0; j < 2; j++)
+                    s = s + randomNumber(r);
+                serialNumbers.Add(s);
+
+
+            }
+            return serialNumbers;
+
+        }
+
+        private string randomLetter(Random r)
+        {
+            string chars = "$%#@!*abcdefghijklmnopqrstuvwxyz1234567890?;:ABCDEFGHIJKLMNOPQRSTUVWXYZ^&";
+            int n = r.Next(0, chars.Length - 1);
+            char c = chars[n];
+            return c.ToString();
+        }
+
+        private int randomNumber(Random r)
+        {
+
+            int n = r.Next(0, 9);
+            return n;
+        }
+
+        private async void saveSerialNumbers(List<String> serialNr)
+        {
+            string filename = "SerialNumber.txt";
+            StorageFolder localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            StorageFile file = await localFolder.CreateFileAsync(filename, CreationCollisionOption.ReplaceExisting);
+
+            for (int i = 0; i < serialNr.Count; i++)
+                await FileIO.AppendTextAsync(file, (serialNr.ElementAt(i) + "\n"));
+
+
+        }
+
 
         private void Hamb_button_Click(object sender, RoutedEventArgs e)
         {

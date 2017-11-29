@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -23,24 +22,11 @@ namespace MandatoryProject2
     /// <summary>
     /// Pagina vuota che può essere usata autonomamente oppure per l'esplorazione all'interno di un frame.
     /// </summary>
-    public sealed partial class SeeSubmissions : Page
+    public sealed partial class _10Submissions : Page
     {
-        public SeeSubmissions()
+        public _10Submissions()
         {
-            this.InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-
-
-            Frame.Navigate(typeof(SubmissionsView));
-        }
-
-        private void Query_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-            
+           
         }
     }
 }

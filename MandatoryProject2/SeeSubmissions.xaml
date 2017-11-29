@@ -13,5 +13,6 @@
         <TextBox x:Name="Name_Copy" HorizontalAlignment="Left" Margin="492,401,0,0" TextWrapping="Wrap" Text="Insert Password" VerticalAlignment="Top" Height="44" Width="315"  BorderThickness="0,0,0,2" BorderBrush="#66000000"  Background="{x:Null}" FontSize="14" FontStyle="Italic" SelectionHighlightColor="#FFFF78D7"   />
         <TextBox x:Name="NameLabel_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password (serial number)" VerticalAlignment="Top" RenderTransformOrigin="3.662,11.094" Margin="490,359,0,0" IsEnabled="False" Height="45" Width="316"/>
         <Button Content="Log in" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="585,484,0,0" Height="76" Width="128" Background="#FFEC39C3" FontSize="22" FontWeight="Bold" Click="Button_Click"/>
+        <TextBlock x:Name="Query" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="560" Width="300" SelectionChanged="Query_SelectionChanged" Margin="55,100,0,0"/>
     </Grid>
 </Page>

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-27T17:32:03.708</Modified>
+      <Modified>2017-11-28T17:02:40.186</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\MandatoryProject2.exe">
       <PackagePath>entrypoint\MandatoryProject2.exe</PackagePath>
-      <Modified>2017-11-27T17:32:03.095</Modified>
+      <Modified>2017-11-28T17:02:39.509</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sara\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -539,7 +539,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\MandatoryProject2.xr.xml">
       <PackagePath>MandatoryProject2.xr.xml</PackagePath>
-      <Modified>2017-11-27T17:13:02.741</Modified>
+      <Modified>2017-11-28T16:27:00.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -548,11 +548,11 @@
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-27T17:24:00.406</Modified>
+      <Modified>2017-11-28T17:01:13.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\Core\MandatoryProject2.exe">
       <PackagePath>MandatoryProject2.exe</PackagePath>
-      <Modified>2017-11-27T17:32:03.704</Modified>
+      <Modified>2017-11-28T17:02:40.181</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
