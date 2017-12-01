@@ -50,7 +50,7 @@ namespace MandatoryProject2
             }
            
             string filename = "table.xml";
-            File.Delete(Path.Combine(localFolder.Path, filename));
+        //    File.Delete(Path.Combine(localFolder.Path, filename));
 
             myFrame.Navigate(typeof(BlankPage1));
         }

@@ -118,7 +118,7 @@ namespace MandatoryProject2
             {
                 doc = XDocument.Load(reader);
                 XElement rootElement = doc.Root;
-                xmlResult.Text = rootElement.ToString();
+               // xmlResult.Text = rootElement.ToString();
             }
 
         }
@@ -222,8 +222,8 @@ namespace MandatoryProject2
                 foreach (var line in lines)
                     serialNr.Add(line);
             }
-            for (int i = 0; i < serialNr.Count; i++)
-                xmlResult.Text += serialNr.ElementAt(i) + "\n";
+            //for (int i = 0; i < serialNr.Count; i++)
+                //xmlResult.Text += serialNr.ElementAt(i) + "\n";
             return serialNr;
         }
 

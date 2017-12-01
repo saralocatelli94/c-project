@@ -11,8 +11,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="CornerRadius" />
       <RootProperty Name="Children" />
-      <RootMethod Name="GetRow" />
-      <RootMethod Name="SetRow" />
+      <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="MandatoryProject2._10Submissions" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
@@ -100,6 +99,13 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="wizardcodebehindxmlns.MainPage1" />
     <RootType FullName="MandatoryProject2.SeeSubmissions" />
+    <RootType FullName="Windows.UI.Xaml.Controls.FlipView">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+    </RootType>
     <RootType FullName="MandatoryProject2.SubmissionsView" />
     <RootType FullName="MandatoryProject2.Winner" />
   </Roots.RootTypes>

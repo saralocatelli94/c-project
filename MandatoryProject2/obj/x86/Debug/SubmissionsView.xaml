@@ -7,8 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="#FF4C5CFB" CornerRadius="6">
-        <Image x:ConnectionId='1' x:Name="Im" HorizontalAlignment="Left" Height="240" VerticalAlignment="Top" Width="280" Margin="920,200,0,0"/>
+    <Grid x:ConnectionId='1' Name="grid" Background="#FF4C5CFB" CornerRadius="6">
+        <FlipView x:ConnectionId='2' x:Name="flip" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Top" Width="1120" Height="720">
+           
+
+        </FlipView>
 
     </Grid>
 </Page>
