@@ -36,6 +36,7 @@ namespace MandatoryProject2
     public sealed partial class MainPage : Page
     {
         List<String> serialNr;
+        int winner = -1;
 
         public MainPage()
         {
@@ -49,7 +50,7 @@ namespace MandatoryProject2
                 saveSerialNumbers(serialNr);
             }
            
-            string filename = "table.xml";
+           // string filename = "table.xml";
         //    File.Delete(Path.Combine(localFolder.Path, filename));
 
             myFrame.Navigate(typeof(BlankPage1));
@@ -113,19 +114,22 @@ namespace MandatoryProject2
             Hb_menu.IsPaneOpen = true;
         }
 
-        private void see_submissions_Click(object sender, RoutedEventArgs e)
-        {
-            myFrame.Navigate(typeof(SeeSubmissions));
-        }
 
-        private void winner_Click(object sender, RoutedEventArgs e)
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            myFrame.Navigate(typeof(Winner));
-        }
-
-        private void new_submission_Click(object sender, RoutedEventArgs e)
-        {
-            myFrame.Navigate(typeof(BlankPage1));
+            if(SEE_SUBMISSIONS.IsSelected)
+            {
+                myFrame.Navigate(typeof(SeeSubmissions));
+            }
+            if(ADD_SUBMISSIONS.IsSelected)
+            {
+                myFrame.Navigate(typeof(BlankPage1));
+            }
+            if(WINNER.IsSelected)
+            {
+                
+                myFrame.Navigate(typeof(Winner),winner);
+            }
         }
     }
     

@@ -17,7 +17,9 @@
         <ProgressRing HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <DatePicker x:Name="Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="547,271,0,0" DateChanged="DateChanged" Background="#00000000"  />
         <Button x:Name="Upload" Content="Choose Image" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="605,345,0,0" Height="55" Width="160" Click="Upload_Click"/>
-        <Image x:Name="Image" HorizontalAlignment="Left" Height="241" Margin="925,158,0,0" VerticalAlignment="Top" Width="310"/>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="241" Margin="925,158,0,0" VerticalAlignment="Top" Width="310" >
+
+        </Image>
         <TextBox x:Name="NameLabel" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" RenderTransformOrigin="3.662,11.094" Margin="244,110,0,0" IsEnabled="False" Height="19" Width="246"/>
         <TextBox x:Name="NameLabel_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Surname" VerticalAlignment="Top" RenderTransformOrigin="3.662,11.094" Margin="245,205,0,0" IsEnabled="False" Height="19" Width="246"/>
         <TextBox x:Name="NameLabel_Copy1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Phone number" VerticalAlignment="Top" RenderTransformOrigin="3.662,11.094" Margin="245,291,0,0" IsEnabled="False" Height="19" Width="246"/>

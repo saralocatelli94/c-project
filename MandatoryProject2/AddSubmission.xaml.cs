@@ -42,12 +42,15 @@ namespace MandatoryProject2
 
             this.InitializeComponent();
              
-            serialNr = readSerialNumbers();
+            
         }
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            if(serialNr==null)
+                serialNr = readSerialNumbers();
             if (ValidateData())
             {
+                ShowDialog_Click();
                 return;
             }
             String s = Date.Date.Day.ToString() + "-" + Date.Date.Month.ToString() + "-" + Date.Date.Year.ToString();
@@ -66,7 +69,8 @@ namespace MandatoryProject2
                    new XElement("PhoneNr", PhoneNr.Text),
                       new XElement("Email", Email.Text),
                        new XElement("Image", imagePath),
-                      new XElement("SerialNr", SeriaNr.Text)
+                      new XElement("SerialNr", SeriaNr.Text),
+                       new XElement("Winner", "N")
                       ));
 
 
@@ -94,7 +98,8 @@ namespace MandatoryProject2
                    new XElement("PhoneNr", PhoneNr.Text),
                       new XElement("Email", Email.Text),
                       new XElement("Image", imagePath),
-                      new XElement("SerialNr", SeriaNr.Text)
+                      new XElement("SerialNr", SeriaNr.Text),
+                      new XElement("Winner", "N")
                       )));
                     doc.Save(stream);
                     stream.Flush();
@@ -131,7 +136,7 @@ namespace MandatoryProject2
             tb.Text = "";
         }
 
-        public Boolean ValidateData()
+        public  Boolean ValidateData()
         {
             bool error = false;
             //name validation
@@ -143,6 +148,7 @@ namespace MandatoryProject2
             if (!match.Success)
             {
                 textBoxError(Name);
+                Name.Text = "Insert only letters.";
                 error = true;
             }
             //surname validation
@@ -153,6 +159,7 @@ namespace MandatoryProject2
             if (!match.Success)
             {
                 textBoxError(Surname);
+                Surname.Text = "Insert only letters.";
                 error = true;
             }
             //phone nr validation
@@ -162,6 +169,7 @@ namespace MandatoryProject2
             if (!match.Success)
             {
                 textBoxError(PhoneNr);
+                PhoneNr.Text = "Insert only numbers. The min length is 10.";
                 error = true;
             }
 
@@ -173,6 +181,7 @@ namespace MandatoryProject2
             if (!match.Success)
             {
                 textBoxError(Email);
+                Email.Text = "Insert a valid email.";
                 error = true;
             }
 
@@ -180,7 +189,32 @@ namespace MandatoryProject2
             if (!serialNr.Contains(SeriaNr.Text))
             {
                 textBoxError(SeriaNr);
+                SeriaNr.Text = "Not valid serial number.";
                 error = true;
+            }
+           else
+            {
+
+                XDocument doc;
+                string filename = "table.xml";
+                string path = ApplicationData.Current.LocalFolder.Path;
+                StorageFolder localfolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+                if (File.Exists(path + "/" + filename))
+                {
+                    var file = Path.Combine(path, filename);
+                    doc = XDocument.Load(file);
+                    XElement xelement = doc.Root;
+                    var n = from nm in xelement.Elements("Person")
+                               where (string)nm.Element("SerialNr") == SeriaNr.Text
+                               select nm;
+                    if(n.Count()>0)
+                    {
+                        SeriaNr.Text = "Serial number already used.";
+                        textBoxError(SeriaNr);
+                        error = true;
+                    }
+                    
+                }
             }
 
             //image validation
@@ -262,7 +296,23 @@ namespace MandatoryProject2
         {
             Date.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
         }
-        
+        private async void ShowDialog_Click()
+        {
+            // Show the custom dialog
+            ContentDialog dialog = new ContentDialog()
+            {
+                Title = "Custom dialog",
+                MaxWidth = this.ActualWidth,
+                PrimaryButtonText = "OK",
+                Content=new TextBlock
+                {
+                    Text="Some values aren't valid!"
+                },
+            };
+            await dialog.ShowAsync();
+
+        }
+
 
     }
 }

@@ -101,6 +101,7 @@
     <Compile Include="AddSubmission.xaml.cs">
       <DependentUpon>AddSubmission.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Assets\Controls\FlipViewIndicator.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

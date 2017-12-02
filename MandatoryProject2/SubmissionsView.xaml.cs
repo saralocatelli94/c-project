@@ -41,7 +41,10 @@ namespace MandatoryProject2
             string folder = ApplicationData.Current.LocalFolder.Path;
             string path = folder + "/" + filename;
             if (!File.Exists(folder + "/" + filename))
+            {
+                textb.Text = "There aren't any submissions yet";
                 return;
+            }
             List<string> imageNames = new List<string>();
             List<string> names = new List<string>();
             List<string> surnames = new List<string>();
@@ -69,18 +72,18 @@ namespace MandatoryProject2
                 int pagesNumber = number / 10;
                 if (number % 10 != 0)
                     pagesNumber++;
-                
+
                 for (int j = 0; j < pagesNumber; j++)
                 {
                     ListView l = new ListView();
                     l.HorizontalAlignment = HorizontalAlignment.Left;
                     l.Height = 560;
-                    l.Margin = new Thickness(160, 80, 0, 0);
+                    l.Margin = new Thickness(245, 160, 0, 0);
                     l.VerticalAlignment = VerticalAlignment.Top;
                     l.Width = 800;
                     flip.Items.Add(l);
 
-                    for (int i = j*10; i < (j*10)+10; i++)
+                    for (int i = j * 10; i < (j * 10) + 10; i++)
                     {
                         if (i >= imageNames.Count)
                             return;
@@ -89,7 +92,7 @@ namespace MandatoryProject2
                         Image image = new Image();
                         image.HorizontalAlignment = HorizontalAlignment.Left;
                         image.Height = 240;
-                        image.Width = 240;                      
+                        image.Width = 240;
                         image.Margin = new Thickness(50, 50, 0, 0);
                         image.VerticalAlignment = VerticalAlignment.Top;
                         TextBlock name = new TextBlock();
@@ -145,10 +148,11 @@ namespace MandatoryProject2
                         dateValue.Text = dates.ElementAt(i);
                         image.Visibility = Visibility.Visible;
                         l.Items.Add(grid);
-                       
+
 
                     }
                 }
+                
 
             }
         }

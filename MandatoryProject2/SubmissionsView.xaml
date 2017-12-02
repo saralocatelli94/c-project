@@ -5,13 +5,29 @@
     xmlns:local="using:MandatoryProject2"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Width="1290"
+    xmlns:my="using:MandatoryProject2.Assets.Controls"
+    >
 
-    <Grid Name="grid" Background="#FF4C5CFB" CornerRadius="6">
-        <FlipView x:Name="flip" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Top" Width="1120" Height="720">
-           
+    <Grid Name="grid" Background="#FF4C5CFB" >
+        <FlipView x:Name="flip" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1280" Height="720"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Here you can find up to 10 submissions per page " VerticalAlignment="Top" Margin="320,15,0,0" Height="75" Width="640"  FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Light"/>
+        <my:FlipViewIndicator
+            FlipView="{Binding ElementName=flipView}"
+          
+            HorizontalAlignment="Left"
+            HorizontalContentAlignment="Left"
+            Grid.Row="1"
+            Margin="8">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </my:FlipViewIndicator>
+        <TextBlock x:Name="textb" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="485,320,0,0" Height="80" Width="320"/>
 
-        </FlipView>
+
 
     </Grid>
 </Page>

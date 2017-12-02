@@ -11,25 +11,37 @@
 
         <SplitView x:ConnectionId='1' x:Name="Hb_menu" IsPaneOpen="false" DisplayMode="CompactOverlay" CompactPaneLength="80" OpenPaneLength="250">
             <SplitView.Pane>
-                <StackPanel Background="Gray">
+                <StackPanel Background="#FFE4DEDE">
                     <Button x:ConnectionId='2' x:Name="Hamb_button" FontFamily="Segoe MDL2 Assets" FontSize="35" Content="&#xE700;" Height="80" Width="80" RenderTransformOrigin="0.695,0.8" Margin="0,0,0,0"                           Background="Transparent"/>
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='5' x:Name="new_submission" FontFamily="Segoe MDL2 Assets" Content="" FontSize="35"  Height="80" Width="80" RenderTransformOrigin="0.695,0.8" Margin="0,0,0,0" Background="Transparent"                             ></Button>
-                        <TextBlock Text="Add a submission" FontSize="20" VerticalAlignment="Center"></TextBlock>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='4' x:Name="see_submissions" FontFamily="Segoe MDL2 Assets" Content="" FontSize="35"  Height="80" Width="80" RenderTransformOrigin="0.695,0.8" Margin="0,0,0,0" Background="Transparent"                              ></Button>
-                        <TextBlock Text="See submissions" FontSize="20" VerticalAlignment="Center"></TextBlock>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='3' x:Name="winner" FontFamily="Segoe MDL2 Assets" Content="" FontSize="35"  Height="80" Width="80" RenderTransformOrigin="0.695,0.8" Margin="0,0,0,0" Background="Transparent"                     ></Button>
-                        <TextBlock Text="See the winner" FontSize="20" VerticalAlignment="Center"></TextBlock>
-                    </StackPanel>
+                    <ListBox x:ConnectionId='3' SelectionMode="Single"                                              Margin="0,0,0,0" Background="Transparent">
+                        <ListBoxItem x:ConnectionId='4' Name="ADD_SUBMISSIONS">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock  FontFamily="Segoe MDL2 Assets" Text="" FontSize="35"  Margin="15,20,20,20" VerticalAlignment="Center"></TextBlock>
+                                <TextBlock Text="Add a submission" FontSize="20" VerticalAlignment="Center"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                    
+                    
+                        <ListBoxItem x:ConnectionId='5' Name="SEE_SUBMISSIONS">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock  FontFamily="Segoe MDL2 Assets" Text="" FontSize="35" Margin="15,20,20,20" VerticalAlignment="Center"></TextBlock>
+                                <TextBlock Text="See submissions" FontSize="20" VerticalAlignment="Center"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                    
+                    
+                        <ListBoxItem x:ConnectionId='6' Name="WINNER">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" Text="" FontSize="35"  Margin="15,20,20,20"  VerticalAlignment="Center" ></TextBlock>
+                                <TextBlock Text="See the winner" FontSize="20" VerticalAlignment="Center"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+                    </ListBox>
 
                 </StackPanel>
             </SplitView.Pane>
             <SplitView.Content>
-                <Frame x:ConnectionId='6' Name="myFrame"></Frame>
+                <Frame x:ConnectionId='7' Name="myFrame"></Frame>
             </SplitView.Content>
 
 
