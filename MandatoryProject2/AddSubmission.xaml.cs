@@ -132,7 +132,8 @@ namespace MandatoryProject2
         {
 
             TextBox tb = (TextBox)sender;
-            tb.BorderBrush = new SolidColorBrush(Color.FromArgb(40, 0, 0, 0));
+            tb.Background=new SolidColorBrush(Color.FromArgb(100, 228, 222, 222));
+          //  tb.BorderBrush = new SolidColorBrush(Color.FromArgb(40, 0, 0, 0));
             tb.Text = "";
         }
 
@@ -169,7 +170,7 @@ namespace MandatoryProject2
             if (!match.Success)
             {
                 textBoxError(PhoneNr);
-                PhoneNr.Text = "Insert only numbers. The min length is 10.";
+                PhoneNr.Text = "Insert at least 10 numbers.";
                 error = true;
             }
 
@@ -272,6 +273,7 @@ namespace MandatoryProject2
             picker.FileTypeFilter.Add(".jpg");
             picker.FileTypeFilter.Add(".png");
             StorageFile sf = await picker.PickSingleFileAsync();
+           
             if (sf != null)
             {
                 try

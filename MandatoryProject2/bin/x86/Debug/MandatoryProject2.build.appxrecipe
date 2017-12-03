@@ -370,6 +370,9 @@
     <AppxPackagedFile Include="C:\Users\sara\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\Assets\Controls\ImageDefault.jpg">
+      <PackagePath>Assets\Controls\ImageDefault.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>

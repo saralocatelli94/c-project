@@ -51,6 +51,7 @@ namespace MandatoryProject2
             List<string> emails = new List<string>();
             List<string> phNumbers = new List<string>();
             List<string> dates = new List<string>();
+            List<string> serialNumbers = new List<string>();
             Grid g = new Grid();
             using (StreamReader reader = File.OpenText(path))
             {
@@ -66,6 +67,7 @@ namespace MandatoryProject2
                     emails.Add(x.Element("Email").Value.ToString());
                     phNumbers.Add(x.Element("PhoneNr").Value.ToString());
                     dates.Add(x.Element("Date").Value.ToString());
+                    serialNumbers.Add(x.Element("SerialNr").Value.ToString());
                     // Query.Text += x.Element("Image").Value.ToString();
                 }
                 int number = imageNames.Count;
@@ -77,7 +79,7 @@ namespace MandatoryProject2
                 {
                     ListView l = new ListView();
                     l.HorizontalAlignment = HorizontalAlignment.Left;
-                    l.Height = 560;
+                    l.Height = 540;
                     l.Margin = new Thickness(245, 160, 0, 0);
                     l.VerticalAlignment = VerticalAlignment.Top;
                     l.Width = 800;
@@ -88,12 +90,13 @@ namespace MandatoryProject2
                         if (i >= imageNames.Count)
                             return;
                         Grid grid = new Grid();
+                        grid.Height = 250;
 
                         Image image = new Image();
                         image.HorizontalAlignment = HorizontalAlignment.Left;
                         image.Height = 240;
                         image.Width = 240;
-                        image.Margin = new Thickness(50, 50, 0, 0);
+                        image.Margin = new Thickness(50, 20, 20, 20);
                         image.VerticalAlignment = VerticalAlignment.Top;
                         TextBlock name = new TextBlock();
                         name.Margin = new Thickness(350, 50, 0, 0);
@@ -115,6 +118,10 @@ namespace MandatoryProject2
                         date.Margin = new Thickness(350, 170, 0, 0);
                         TextBlock dateValue = new TextBlock();
                         dateValue.Margin = new Thickness(470, 170, 0, 0);
+                        TextBlock serial = new TextBlock();
+                        serial.Margin = new Thickness(350, 200, 0, 0);
+                        TextBlock serialValue = new TextBlock();
+                        serialValue.Margin = new Thickness(470, 200, 0, 0);
                         grid.Children.Add(image);
                         grid.Children.Add(name);
                         grid.Children.Add(surname);
@@ -126,6 +133,8 @@ namespace MandatoryProject2
                         grid.Children.Add(phoneValue);
                         grid.Children.Add(date);
                         grid.Children.Add(dateValue);
+                        grid.Children.Add(serial);
+                        grid.Children.Add(serialValue);
 
 
                         BitmapImage bm = new BitmapImage();
@@ -141,12 +150,16 @@ namespace MandatoryProject2
                         email.Text = "Email: ";
                         phone.Text = "Phone number: ";
                         date.Text = "Date of birth: ";
+                        serial.Text = "Serial number:";
                         nameValue.Text = names.ElementAt(i);
                         surnameValue.Text = surnames.ElementAt(i);
                         emailValue.Text = emails.ElementAt(i);
                         phoneValue.Text = phNumbers.ElementAt(i);
                         dateValue.Text = dates.ElementAt(i);
+                        serialValue.Text = serialNumbers.ElementAt(i);
                         image.Visibility = Visibility.Visible;
+                        image.Stretch = Stretch.Uniform;
+                        image.VerticalAlignment = VerticalAlignment.Center;
                         l.Items.Add(grid);
 
 

@@ -8,6 +8,7 @@ using System.Xml.Linq;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -41,6 +42,13 @@ namespace MandatoryProject2
         private void Query_SelectionChanged(object sender, RoutedEventArgs e)
         {
             
+        }
+        public void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+            TextBox tb = (TextBox)sender;
+            tb.Background = new SolidColorBrush(Color.FromArgb(100, 228, 222, 222));
+            tb.Text = "";
         }
     }
 }

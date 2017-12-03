@@ -9,20 +9,21 @@
 
     <Grid Background="#FF4C5CFB" >
         <TextBlock x:ConnectionId='1' HorizontalAlignment="Left" TextWrapping="Wrap" Text="The winner is.." VerticalAlignment="Top" Height="95" Width="530"                                               FontWeight="Bold" FontSize="72" Margin="365,5,0,0"/>
-        <Image x:ConnectionId='2' x:Name="ImageValue" HorizontalAlignment="Left" Height="320" VerticalAlignment="Top" Width="315" Margin="325,240,0,0"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="720,316,0,0" Height="35" Width="102"/>
-        <TextBlock x:ConnectionId='3' x:Name="NameValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="840,316,0,0" Height="35" Width="190"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Surname:" VerticalAlignment="Top" Margin="720,346,0,0" Height="35" Width="102"/>
-        <TextBlock x:ConnectionId='4' x:Name="SurnameValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="surname:" VerticalAlignment="Top" Margin="840,346,0,0" Height="35" Width="175"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Phone nr:" VerticalAlignment="Top" Margin="720,376,0,0" Height="35" Width="102"/>
-        <TextBlock x:ConnectionId='5' x:Name="PhoneValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="phone:" VerticalAlignment="Top" Margin="840,376,0,0" Height="35" Width="175"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Margin="720,406,0,0" Height="35" Width="102"/>
-        <TextBlock x:ConnectionId='6' x:Name="EmailValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="email:" VerticalAlignment="Top" Margin="840,406,0,0" Height="35" Width="155"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Date of birth:" VerticalAlignment="Top" Margin="720,436,0,0" Height="35" Width="102"/>
-        <TextBlock x:ConnectionId='7' x:Name="DateValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="date:" VerticalAlignment="Top" Margin="840,436,0,0" Height="35" Width="150"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Serial nr:" VerticalAlignment="Top" Margin="720,466,0,0" Height="35" Width="102"/>
-        <TextBlock x:ConnectionId='8' x:Name="SerialValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="serial:" VerticalAlignment="Top" Margin="840,466,0,0" Height="35" Width="175"/>
-        <Button x:ConnectionId='9' Content="Change winner" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="575,145,0,0" Height="80" Width="130" Background="#FFAAA7EA"                     />
+        <Image x:ConnectionId='2' x:Name="ImageValue" HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="315" Margin="325,261,0,139"/>
+        <TextBlock x:ConnectionId='3' x:Name="Name" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="720,316,0,0" Height="35" Width="102" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='4' x:Name="NameValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="840,316,0,0" Height="35" Width="190" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='5' x:Name="Surname" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Surname:" VerticalAlignment="Top" Margin="720,346,0,0" Height="35" Width="102" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='6' x:Name="SurnameValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="surname:" VerticalAlignment="Top" Margin="840,346,0,0" Height="35" Width="175" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='7' x:Name="Phone" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Phone nr:" VerticalAlignment="Top" Margin="720,376,0,0" Height="35" Width="102" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='8' x:Name="PhoneValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="phone:" VerticalAlignment="Top" Margin="840,376,0,0" Height="35" Width="175" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='9' x:Name="Email" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Margin="720,406,0,0" Height="35" Width="102" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='10' x:Name="EmailValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="email:" VerticalAlignment="Top" Margin="840,406,0,0" Height="35" Width="155" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='11' x:Name="Date" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Date of birth:" VerticalAlignment="Top" Margin="720,436,0,0" Height="35" Width="102" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='12' x:Name="DateValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="date:" VerticalAlignment="Top" Margin="840,436,0,0" Height="35" Width="150" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='13' x:Name="Serial" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Serial nr:" VerticalAlignment="Top" Margin="720,466,0,0" Height="35" Width="102" Visibility="Collapsed"/>
+        <TextBlock x:ConnectionId='14' x:Name="SerialValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="serial:" VerticalAlignment="Top" Margin="840,466,0,0" Height="35" Width="175" Visibility="Collapsed"/>
+        <Button x:ConnectionId='15' x:Name="changeWinner" Content="Change winner" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="575,145,0,0" Height="80" Width="130"  Background="#FF5D2440"                      Visibility="Collapsed" Foreground="#FFE4DEDE"  FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='16' x:Name="textb" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="485,320,0,0" Height="80" Width="320"/>
     </Grid>
 </Page>
 

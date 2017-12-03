@@ -33,6 +33,7 @@
       <RootProperty Name="SelectionHighlightColor" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="IsEnabled" />
+      <RootProperty Name="Foreground" />
       <RootEvent Name="GotFocus" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -48,6 +49,7 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="FontFamily" />
+      <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
@@ -67,6 +69,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="MandatoryProject2.BlankPage1" />
@@ -105,6 +108,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="FontWeight" />
+      <RootProperty Name="Visibility" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
@@ -119,6 +123,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="FontWeight" />
     </RootType>
     <RootType FullName="MandatoryProject2.Assets.Controls.FlipViewIndicator">
       <RootProperty Name="FlipView" />

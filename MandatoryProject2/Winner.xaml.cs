@@ -7,6 +7,7 @@ using System.Xml.Linq;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Storage;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -23,8 +24,11 @@ namespace MandatoryProject2
     /// <summary>
     /// Pagina vuota che può essere usata autonomamente oppure per l'esplorazione all'interno di un frame.
     /// </summary>
+    /// 
+     
     public sealed partial class Winner : Page
     {
+        bool visible = false;
         Random r = new Random();
         public Winner()
         {
@@ -41,7 +45,23 @@ namespace MandatoryProject2
             StorageFolder localfolder = Windows.Storage.ApplicationData.Current.LocalFolder;
             if (File.Exists(path + "/" + filename))
             {
-
+                if (!visible)
+                {
+                    visible = true;
+                    Name.Visibility = Visibility.Visible;
+                    Surname.Visibility = Visibility.Visible;
+                    Email.Visibility = Visibility.Visible;
+                    Date.Visibility = Visibility.Visible;
+                    Phone.Visibility = Visibility.Visible;
+                    Serial.Visibility = Visibility.Visible;
+                    NameValue.Visibility = Visibility.Visible;
+                    SurnameValue.Visibility = Visibility.Visible;
+                    EmailValue.Visibility = Visibility.Visible;
+                    PhoneValue.Visibility = Visibility.Visible;
+                    DateValue.Visibility = Visibility.Visible;
+                    SerialValue.Visibility = Visibility.Visible;
+                    changeWinner.Visibility = Visibility.Visible;
+                }
 
                 var file = Path.Combine(path, filename);
                 doc = XDocument.Load(file);
@@ -82,7 +102,7 @@ namespace MandatoryProject2
             }
             else
             {
-
+                textb.Text = "There aren't any submissions yet";
             }
         }
 
@@ -119,5 +139,6 @@ namespace MandatoryProject2
             
             chooseAWinner(r);
         }
+
     }
 }

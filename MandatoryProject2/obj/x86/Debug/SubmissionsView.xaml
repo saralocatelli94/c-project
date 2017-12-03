@@ -10,8 +10,7 @@
     >
 
     <Grid x:ConnectionId='1' Name="grid" Background="#FF4C5CFB" >
-        <FlipView x:ConnectionId='2' x:Name="flip" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1280" Height="720"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Here you can find up to 10 submissions per page " VerticalAlignment="Top" Margin="320,15,0,0" Height="75" Width="640"  FontSize="30" FontWeight="Bold" FontFamily="Segoe UI Light"/>
+        <FlipView x:ConnectionId='2' x:Name="flip" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1280" Height="720" FontWeight="Bold"/>
         <my:FlipViewIndicator
             FlipView="{Binding ElementName=flipView}"
           
@@ -26,6 +25,7 @@
             </ListBox.ItemsPanel>
         </my:FlipViewIndicator>
         <TextBlock x:ConnectionId='3' x:Name="textb" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="485,320,0,0" Height="80" Width="320"/>
+        <TextBox x:ConnectionId='4' x:Name="pageNr" Text="10 Submissions" VerticalAlignment="Center" Margin="465,57,471,578" Background="#FF5D2440" Height="85" Foreground="#FFE4DEDE" FontSize="48" TextWrapping="Wrap" FontStyle="Italic" BorderThickness="0" />
 
 
 
