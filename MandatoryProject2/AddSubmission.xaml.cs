@@ -50,7 +50,7 @@ namespace MandatoryProject2
                 serialNr = readSerialNumbers();
             if (ValidateData())
             {
-                ShowDialog_Click();
+                ShowDialog_Click("Some parameters are not valid!");
                 return;
             }
             String s = Date.Date.Day.ToString() + "-" + Date.Date.Month.ToString() + "-" + Date.Date.Year.ToString();
@@ -103,8 +103,10 @@ namespace MandatoryProject2
                       )));
                     doc.Save(stream);
                     stream.Flush();
+                    
                 }
             }
+            ShowDialog_Click("Done!");
 
         }
 
@@ -133,7 +135,7 @@ namespace MandatoryProject2
 
             TextBox tb = (TextBox)sender;
             tb.Background=new SolidColorBrush(Color.FromArgb(100, 228, 222, 222));
-          //  tb.BorderBrush = new SolidColorBrush(Color.FromArgb(40, 0, 0, 0));
+            tb.BorderBrush = new SolidColorBrush(Color.FromArgb(40, 0, 0, 0));
             tb.Text = "";
         }
 
@@ -298,7 +300,7 @@ namespace MandatoryProject2
         {
             Date.Background = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
         }
-        private async void ShowDialog_Click()
+        private async void ShowDialog_Click(string s)
         {
             // Show the custom dialog
             ContentDialog dialog = new ContentDialog()
@@ -306,9 +308,9 @@ namespace MandatoryProject2
                 Title = "Custom dialog",
                 MaxWidth = this.ActualWidth,
                 PrimaryButtonText = "OK",
-                Content=new TextBlock
+                Content = new TextBlock
                 {
-                    Text="Some values aren't valid!"
+                    Text = s
                 },
             };
             await dialog.ShowAsync();

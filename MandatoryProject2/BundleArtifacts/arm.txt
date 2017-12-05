@@ -1,0 +1,2 @@
+MainPackage=C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\ARM\Debug\MandatoryProject2_1.0.1.0_ARM_Debug.appx
+SymbolPackage=C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\AppPackages\MandatoryProject2_1.0.1.0_Debug_Test\MandatoryProject2_1.0.1.0_ARM_Debug.appxsym

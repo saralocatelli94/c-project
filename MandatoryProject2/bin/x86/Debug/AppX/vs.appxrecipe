@@ -19,25 +19,25 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>ABEAD812E68265E3E90BC16B0878E3C3D1A7D945CD8D5351B9F6701441A0EDAD</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>24df9725-518f-4e5e-bfd0-ba2bb6f72cca_1.0.0.0_x86__pfvj52c5bwg9j</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>4D7AC85803DA6CDD9810A0093C9AEEE73EA57EF6883B493320ADD05D76E2ADD5</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>24df9725-518f-4e5e-bfd0-ba2bb6f72cca_1.0.1.0_x86__pfvj52c5bwg9j</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>24df9725-518f-4e5e-bfd0-ba2bb6f72cca_pfvj52c5bwg9j!App</RegisteredUserModeAppID>
     <RegisteredPackageID>24df9725-518f-4e5e-bfd0-ba2bb6f72cca</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=sara</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.0.1.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-03T12:42:45.726</Modified>
+      <Modified>2017-12-05T00:10:28.483</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\MandatoryProject2.exe">
       <PackagePath>entrypoint\MandatoryProject2.exe</PackagePath>
-      <Modified>2017-12-03T12:42:44.712</Modified>
+      <Modified>2017-12-05T00:10:27.902</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sara\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -543,7 +543,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\MandatoryProject2.xr.xml">
       <PackagePath>MandatoryProject2.xr.xml</PackagePath>
-      <Modified>2017-12-03T12:42:44.395</Modified>
+      <Modified>2017-12-04T21:53:37.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -552,11 +552,11 @@
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-03T12:42:45.222</Modified>
+      <Modified>2017-12-04T23:45:39.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\Core\MandatoryProject2.exe">
       <PackagePath>MandatoryProject2.exe</PackagePath>
-      <Modified>2017-12-03T12:42:45.722</Modified>
+      <Modified>2017-12-05T00:10:28.477</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

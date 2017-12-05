@@ -73,6 +73,7 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="MandatoryProject2.BlankPage1" />
+    <RootType FullName="MandatoryProject2.Delete" />
     <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
       <RootProperty Name="IsPaneOpen" />
       <RootProperty Name="DisplayMode" />

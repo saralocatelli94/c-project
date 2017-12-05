@@ -45,6 +45,58 @@ namespace MandatoryProject2
             StorageFolder localfolder = Windows.Storage.ApplicationData.Current.LocalFolder;
             if (File.Exists(path + "/" + filename))
             {
+
+                var file = Path.Combine(path, filename);
+                doc = XDocument.Load(file);
+                XElement xelement = doc.Root;
+                int number = doc.Root.Elements().Count();
+                var person = from nm in xelement.Elements("Person")
+                           where (string)nm.Element("Winner") == "Y"
+                           select nm;
+                XElement winnerPerson;
+                if(number == 0)
+                {
+                    /* if (visible)
+                     {
+                         visible = false;
+                         Name.Visibility = Visibility.Collapsed;
+                         Surname.Visibility = Visibility.Collapsed;
+                         Email.Visibility = Visibility.Collapsed;
+                         Date.Visibility = Visibility.Collapsed;
+                         Phone.Visibility = Visibility.Collapsed;
+                         Serial.Visibility = Visibility.Collapsed;
+                         NameValue.Visibility = Visibility.Collapsed;
+                         SurnameValue.Visibility = Visibility.Collapsed;
+                         EmailValue.Visibility = Visibility.Collapsed;
+                         PhoneValue.Visibility = Visibility.Collapsed;
+                         DateValue.Visibility = Visibility.Collapsed;
+                         SerialValue.Visibility = Visibility.Collapsed;
+                         changeWinner.Visibility = Visibility.Collapsed;
+
+                     }*/
+                    textb.Text = "There aren't any submissions yet";
+                    return;
+                }
+                 if (person.Count() == 0)
+                {
+                   
+                    
+                    int winner = r.Next(0, number - 1);
+                    winnerPerson = doc.Descendants("Person").ElementAt(winner);
+                    winnerPerson.Element("Winner").Value = "Y";
+                    StorageFile f = await localfolder.CreateFileAsync(filename, CreationCollisionOption.ReplaceExisting);
+                    using (var s = await f.OpenStreamForWriteAsync())
+                    {
+                        doc.Save(s);
+                    }
+                   
+                }
+                else
+                {
+
+                   
+                    winnerPerson = person.ElementAt(0);
+                }
                 if (!visible)
                 {
                     visible = true;
@@ -61,31 +113,6 @@ namespace MandatoryProject2
                     DateValue.Visibility = Visibility.Visible;
                     SerialValue.Visibility = Visibility.Visible;
                     changeWinner.Visibility = Visibility.Visible;
-                }
-
-                var file = Path.Combine(path, filename);
-                doc = XDocument.Load(file);
-                XElement xelement = doc.Root;
-                var person = from nm in xelement.Elements("Person")
-                           where (string)nm.Element("Winner") == "Y"
-                           select nm;
-                XElement winnerPerson;
-                if (person.Count() == 0)
-                {
-                    int number = doc.Root.Elements().Count();
-                    int winner = r.Next(0, number - 1);
-                    winnerPerson = doc.Descendants("Person").ElementAt(winner);
-                    winnerPerson.Element("Winner").Value = "Y";
-                    StorageFile f = await localfolder.CreateFileAsync(filename, CreationCollisionOption.ReplaceExisting);
-                    using (var s = await f.OpenStreamForWriteAsync())
-                    {
-                        doc.Save(s);
-                    }
-                   
-                }
-                else
-                {
-                    winnerPerson = person.ElementAt(0);
                 }
                 NameValue.Text = winnerPerson.Element("name").Value.ToString();
                 SurnameValue.Text = winnerPerson.Element("surname").Value.ToString();

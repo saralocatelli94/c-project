@@ -36,7 +36,7 @@ namespace MandatoryProject2
     public sealed partial class MainPage : Page
     {
         List<String> serialNr;
-        int winner = -1;
+
 
         public MainPage()
         {
@@ -54,6 +54,7 @@ namespace MandatoryProject2
         //    File.Delete(Path.Combine(localFolder.Path, filename));
 
             myFrame.Navigate(typeof(BlankPage1));
+            ADD_SUBMISSIONS.IsSelected = true;
         }
         private List<String> generateSerialNumbers()
         {
@@ -128,7 +129,12 @@ namespace MandatoryProject2
             if(WINNER.IsSelected)
             {
                 
-                myFrame.Navigate(typeof(Winner),winner);
+                myFrame.Navigate(typeof(Winner));
+            }
+            if (DELETE_SUBMISSIONS.IsSelected)
+            {
+
+                myFrame.Navigate(typeof(Delete));
             }
         }
     }

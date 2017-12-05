@@ -9,7 +9,7 @@
 
     <Grid Background="#FF4C5CFB" CornerRadius="6">
 
-        <SplitView x:Name="Hb_menu" IsPaneOpen="false" DisplayMode="CompactOverlay" CompactPaneLength="80" OpenPaneLength="250">
+        <SplitView x:Name="Hb_menu" IsPaneOpen="false" DisplayMode="CompactOverlay" CompactPaneLength="80" OpenPaneLength="270">
             <SplitView.Pane>
                 <StackPanel Background="#FFE4DEDE">
                     <Button x:Name="Hamb_button" FontFamily="Segoe MDL2 Assets" FontSize="35" Content="&#xE700;" Height="80" Width="80" RenderTransformOrigin="0.695,0.8" Margin="0,0,0,0" Click="Hamb_button_Click" Background="Transparent"/>
@@ -20,8 +20,14 @@
                                 <TextBlock Text="Add a submission" FontSize="20" VerticalAlignment="Center"></TextBlock>
                             </StackPanel>
                         </ListBoxItem>
-                    
-                    
+
+                        <ListBoxItem Name="DELETE_SUBMISSIONS">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock  FontFamily="Segoe MDL2 Assets" Text="" FontSize="35"  Margin="15,20,20,20" VerticalAlignment="Center"></TextBlock>
+                                <TextBlock Text="Delete submission" FontSize="20" VerticalAlignment="Center"></TextBlock>
+                            </StackPanel>
+                        </ListBoxItem>
+
                         <ListBoxItem Name="SEE_SUBMISSIONS">
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock  FontFamily="Segoe MDL2 Assets" Text="" FontSize="35" Margin="15,20,20,20" VerticalAlignment="Center"></TextBlock>

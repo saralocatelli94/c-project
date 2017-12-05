@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="MandatoryProject2.SubmissionsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MandatoryProject2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="1290"
+    xmlns:my="using:MandatoryProject2.Assets.Controls"
+    >
+
+    <Grid x:ConnectionId='1' Name="grid" Background="#FF4C5CFB" >
+        <FlipView x:ConnectionId='2' x:Name="flip" HorizontalAlignment="Left" VerticalAlignment="Top" Width="1280" Height="720" FontWeight="Bold"/>
+        <my:FlipViewIndicator
+            FlipView="{Binding ElementName=flipView}"
+          
+            HorizontalAlignment="Left"
+            HorizontalContentAlignment="Left"
+            Grid.Row="1"
+            Margin="8">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </my:FlipViewIndicator>
+        <TextBlock x:ConnectionId='3' x:Name="textb" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="485,320,0,0" Height="80" Width="320"/>
+        <TextBox x:ConnectionId='4' x:Name="pageNr" Text="10 Submissions" VerticalAlignment="Center" Margin="465,57,471,578" Background="#FF5D2440" Height="85" Foreground="#FFE4DEDE" FontSize="48" TextWrapping="Wrap" FontStyle="Italic" BorderThickness="0" />
+
+
+
+    </Grid>
+</Page>
+

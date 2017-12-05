@@ -57,7 +57,12 @@ namespace MandatoryProject2
             {
                 XDocument xmlFile = XDocument.Load(reader);
                 IEnumerable<XElement> people = xmlFile.Root.Elements();
-
+                int count = people.Count();
+                if(count==0)
+                {
+                    textb.Text = "There aren't any submissions yet";
+                    return;
+                }
                 foreach (var x in people)
                 {
 
