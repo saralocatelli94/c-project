@@ -33,10 +33,73 @@ namespace MandatoryProject2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            string username = NameValue.Text;
+            string password = PasswordValue.Password.ToString();
+            if (password=="password" && username=="admin")
+            {
+                LogIn.login = true;
+                LogIn.user = username;
+                LogIn.password = password;
+                Frame.Navigate(typeof(SubmissionsView));
+                return;
+            }
 
 
+            XDocument doc;
+            string filename = "table.xml";
+            string path = ApplicationData.Current.LocalFolder.Path;
+            StorageFolder localfolder = Windows.Storage.ApplicationData.Current.LocalFolder;
+            if (File.Exists(path + "/" + filename))
+            {
 
-            Frame.Navigate(typeof(SubmissionsView));
+                var file = Path.Combine(path, filename);
+                doc = XDocument.Load(file);
+                XElement xelement = doc.Root;
+                var person = from nm in xelement.Elements("Person")
+                             where (string)nm.Element("SerialNr") == password
+                             select nm;         
+                if(person.Count()==0)
+                {
+
+                    customDialog("Username or password not valid!");
+                    return;
+                }
+                if(username==person.ElementAt(0).Element("name").Value.ToString())
+                {
+                    LogIn.login = true;
+                    LogIn.user = username;
+                    LogIn.password = password;
+                    Frame.Navigate(typeof(SubmissionsView));
+                }
+                else
+                {
+                    customDialog("Username or password not valid!");
+                    return;
+                }
+            }
+
+
+            else
+            {
+                customDialog("Username or password not valid!");
+            }
+
+            
+        }
+
+        private async void customDialog(string s)
+        {
+            ContentDialog dialog = new ContentDialog()
+            {
+                Title = "Error",
+                MaxWidth = this.ActualWidth,
+                PrimaryButtonText = "OK",
+                Content = new TextBlock
+                {
+                    Text = s
+                },
+            };
+            await dialog.ShowAsync();
         }
 
         private void Query_SelectionChanged(object sender, RoutedEventArgs e)

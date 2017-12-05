@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF4C5CFB" >
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="The winner is.." VerticalAlignment="Top" Height="95" Width="530" SelectionChanged="TextBlock_SelectionChanged" FontWeight="Bold" FontSize="72" Margin="365,5,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="The winner is.." VerticalAlignment="Top" Height="95" Width="530" SelectionChanged="TextBlock_SelectionChanged" FontWeight="Bold" FontSize="72" Margin="365,5,0,0" Foreground="#FFE4DEDE"/>
         <Image x:Name="ImageValue" HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="315" Margin="325,261,0,139"/>
         <TextBlock x:Name="Name" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="720,316,0,0" Height="35" Width="102" Visibility="Collapsed"/>
         <TextBlock x:Name="NameValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="840,316,0,0" Height="35" Width="190" Visibility="Collapsed"/>
@@ -23,6 +23,6 @@
         <TextBlock x:Name="Serial" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Serial nr:" VerticalAlignment="Top" Margin="720,466,0,0" Height="35" Width="102" Visibility="Collapsed"/>
         <TextBlock x:Name="SerialValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="serial:" VerticalAlignment="Top" Margin="840,466,0,0" Height="35" Width="175" Visibility="Collapsed"/>
         <Button x:Name="changeWinner" Content="Change winner" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="575,145,0,0" Height="80" Width="130"  Background="#FF5D2440" Click="Button_Click" Visibility="Collapsed" Foreground="#FFE4DEDE"  FontWeight="Bold"/>
-        <TextBlock x:Name="textb" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="485,320,0,0" Height="80" Width="320"/>
+        <TextBlock x:Name="textb" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="485,320,0,0" Height="80" Width="320" Foreground="#FFE4DEDE" FontSize="22" FontWeight="Bold"/>
     </Grid>
 </Page>

@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF4C5CFB">
-        <TextBox x:ConnectionId='1' x:Name="SerialValue" HorizontalAlignment="Left" Margin="485,335,0,0" TextWrapping="Wrap" Text="Insert serial number" VerticalAlignment="Top" Height="44" Width="315"  BorderThickness="0,0,0,2" BorderBrush="#66000000"  Background="{x:Null}" FontSize="14" FontStyle="Italic" SelectionHighlightColor="#FFFF78D7"/>
+        <TextBox x:ConnectionId='1' x:Name="SerialValue" HorizontalAlignment="Left" Margin="485,335,0,0" TextWrapping="Wrap" Text="Insert serial number" VerticalAlignment="Top" Height="44" Width="315"  BorderThickness="0,0,0,2" BorderBrush="#66000000"  Background="{x:Null}" FontSize="14" FontStyle="Italic" SelectionHighlightColor="#B2E4DEDE"/>
         <TextBox x:ConnectionId='2' x:Name="Insert" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Serial Number" VerticalAlignment="Top" RenderTransformOrigin="3.662,11.094" Margin="484,291,0,0" IsEnabled="False" Height="45" Width="316"/>
         <Button x:ConnectionId='3' x:Name="Delete1" HorizontalAlignment="Left" Margin="555,454,0,0" VerticalAlignment="Top"                      Height="55" Width="170" Content="Delete" Background="#FF5D2440" Foreground="#FFE4DEDE" FontSize="20" FontWeight="Bold" RenderTransformOrigin="2.629,0.364"/>
 

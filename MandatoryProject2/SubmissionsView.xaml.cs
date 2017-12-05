@@ -28,6 +28,8 @@ namespace MandatoryProject2
         public SubmissionsView()
         {
             this.InitializeComponent();
+            UserValue.Text = LogIn.user;
+            PasswordValue_.Text = LogIn.password;
             uploadSubmissions();
             
 
@@ -173,6 +175,14 @@ namespace MandatoryProject2
                 
 
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            LogIn.login = false;
+            LogIn.password = "";
+            LogIn.user = "";
+            Frame.Navigate(typeof(SeeSubmissions));
         }
     }
 }

@@ -120,7 +120,10 @@ namespace MandatoryProject2
         {
             if(SEE_SUBMISSIONS.IsSelected)
             {
-                myFrame.Navigate(typeof(SeeSubmissions));
+                if(LogIn.login==false)
+                 myFrame.Navigate(typeof(SeeSubmissions));
+                else
+                   myFrame.Navigate(typeof(SubmissionsView));
             }
             if(ADD_SUBMISSIONS.IsSelected)
             {
