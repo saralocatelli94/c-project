@@ -9,11 +9,11 @@
 
     <Grid Background="#FF4C5CFB" CornerRadius="6">
         <TextBox x:ConnectionId='1' x:Name="NameValue" HorizontalAlignment="Left" Margin="489,262,0,0" TextWrapping="Wrap" Text="Insert Name" VerticalAlignment="Top" Height="44" Width="316" BorderThickness="0,0,0,2" BorderBrush="#66000000"  Background="{x:Null}" FontSize="14" FontStyle="Italic" SelectionHighlightColor="#B2E4DEDE"                               />
-        <TextBox x:ConnectionId='2' x:Name="NameLabel" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" RenderTransformOrigin="3.662,11.094" Margin="489,218,0,0" IsEnabled="False" Height="44" Width="315"/>
-        <TextBox x:ConnectionId='3' x:Name="NameLabel_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password (serial number)" VerticalAlignment="Top" RenderTransformOrigin="3.662,11.094" Margin="490,359,0,0" IsEnabled="False" Height="45" Width="316"/>
-        <Button x:ConnectionId='4' Content="Log in" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="570,484,0,0" Height="56" Width="143" Background="#FF5D2440" FontSize="22" FontWeight="Bold"                      Foreground="#FFE4DEDE" />
-        <TextBlock x:ConnectionId='5' x:Name="Query" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="560" Width="300"                                           Margin="55,100,0,0"/>
-        <PasswordBox x:ConnectionId='6' x:Name="PasswordValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="491,404,0,0" Height="44" Width="315" Password="" />
+        <TextBox x:ConnectionId='2' x:Name="NameLabel_Copy" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password (serial number)" VerticalAlignment="Top" RenderTransformOrigin="3.662,11.094" Margin="490,359,0,0" IsEnabled="False" Height="45" Width="316"/>
+        <Button x:ConnectionId='3' Content="Log in" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="570,484,0,0" Height="56" Width="143" Background="#FF5D2440" FontSize="22" FontWeight="Bold"                      Foreground="#FFE4DEDE" />
+        <TextBlock x:ConnectionId='4' x:Name="Query" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="560" Width="300"                                           Margin="55,100,0,0"/>
+        <PasswordBox x:ConnectionId='5' x:Name="PasswordValue" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="491,404,0,0" Height="44" Width="315" Password="" />
+        <TextBox x:ConnectionId='6' x:Name="NameLabel" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" RenderTransformOrigin="3.662,11.094" Margin="489,218,0,0" IsEnabled="False" Height="44" Width="316"/>
     </Grid>
 </Page>
 

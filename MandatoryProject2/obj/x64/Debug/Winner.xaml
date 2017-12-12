@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF4C5CFB" >
-        <TextBlock x:ConnectionId='1' HorizontalAlignment="Left" TextWrapping="Wrap" Text="The winner is.." VerticalAlignment="Top" Height="95" Width="530"                                               FontWeight="Bold" FontSize="72" Margin="365,5,0,0"/>
+        <TextBlock x:ConnectionId='1' HorizontalAlignment="Left" TextWrapping="Wrap" Text="The winner is.." VerticalAlignment="Top" Height="95" Width="530"                                               FontWeight="Bold" FontSize="72" Margin="365,5,0,0" Foreground="#FFE4DEDE"/>
         <Image x:ConnectionId='2' x:Name="ImageValue" HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="315" Margin="325,261,0,139"/>
         <TextBlock x:ConnectionId='3' x:Name="Name" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="720,316,0,0" Height="35" Width="102" Visibility="Collapsed"/>
         <TextBlock x:ConnectionId='4' x:Name="NameValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="840,316,0,0" Height="35" Width="190" Visibility="Collapsed"/>
@@ -23,7 +23,7 @@
         <TextBlock x:ConnectionId='13' x:Name="Serial" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Serial nr:" VerticalAlignment="Top" Margin="720,466,0,0" Height="35" Width="102" Visibility="Collapsed"/>
         <TextBlock x:ConnectionId='14' x:Name="SerialValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="serial:" VerticalAlignment="Top" Margin="840,466,0,0" Height="35" Width="175" Visibility="Collapsed"/>
         <Button x:ConnectionId='15' x:Name="changeWinner" Content="Change winner" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="575,145,0,0" Height="80" Width="130"  Background="#FF5D2440"                      Visibility="Collapsed" Foreground="#FFE4DEDE"  FontWeight="Bold"/>
-        <TextBlock x:ConnectionId='16' x:Name="textb" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="485,320,0,0" Height="80" Width="320"/>
+        <TextBlock x:ConnectionId='16' x:Name="textb" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="485,320,0,0" Height="80" Width="320" Foreground="#FFE4DEDE" FontSize="22" FontWeight="Bold"/>
     </Grid>
 </Page>
 
