@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-12T19:56:54.134</Modified>
+      <Modified>2017-12-12T22:32:03.234</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\MandatoryProject2.exe">
       <PackagePath>entrypoint\MandatoryProject2.exe</PackagePath>
-      <Modified>2017-12-12T19:56:50.712</Modified>
+      <Modified>2017-12-12T22:31:57.383</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sara\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -552,11 +552,11 @@
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-12T19:56:52.863</Modified>
+      <Modified>2017-12-12T22:32:01.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\Core\MandatoryProject2.exe">
       <PackagePath>MandatoryProject2.exe</PackagePath>
-      <Modified>2017-12-12T19:56:54.131</Modified>
+      <Modified>2017-12-12T22:32:03.210</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

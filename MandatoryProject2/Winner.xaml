@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF4C5CFB" >
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="The winner is.." VerticalAlignment="Top" Height="95" Width="530" SelectionChanged="TextBlock_SelectionChanged" FontWeight="Bold" FontSize="72" Margin="365,5,0,0" Foreground="#FFE4DEDE"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="The winner is..." VerticalAlignment="Top" Height="95" Width="530" SelectionChanged="TextBlock_SelectionChanged" FontWeight="Bold" FontSize="72" Margin="365,5,0,0" Foreground="#FFE4DEDE"/>
         <Image x:Name="ImageValue" HorizontalAlignment="Left" Height="320" VerticalAlignment="Center" Width="315" Margin="325,261,0,139"/>
         <TextBlock x:Name="Name" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="720,316,0,0" Height="35" Width="102" Visibility="Collapsed"/>
         <TextBlock x:Name="NameValue" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top" Margin="840,316,0,0" Height="35" Width="190" Visibility="Collapsed"/>
