@@ -1,1 +1,2 @@
+C:\Users\sara\Documents\GitHub\c-sharp-project\ClassLibrary\ClassLibrary.csproj;x86
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\MandatoryProject2.csproj;x86

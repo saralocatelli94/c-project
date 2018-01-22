@@ -428,11 +428,6 @@ C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\M
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\resources.en-us.resfiles
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\resources.en-us.resfiles.intermediate
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\MainPage1.g.i.cs
-C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\MainPage1.g.cs
-C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\MainPage1.xaml
-C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\MainPage1.xbf
-C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\MainPage1.xbf
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\AddSubmission.xbf
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\AddSubmission.g.i.cs
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\AddSubmission.g.cs
@@ -448,11 +443,6 @@ C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\S
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\Winner.xaml
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\SeeSubmissions.xbf
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\Winner.xbf
-C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\10Submissions.g.i.cs
-C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\10Submissions.g.cs
-C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\10Submissions.xaml
-C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\10Submissions.xbf
-C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\10Submissions.xbf
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\SubmissionsView.xbf
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\SubmissionsView.g.i.cs
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\SubmissionsView.g.cs
@@ -463,3 +453,7 @@ C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\D
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\Delete.xaml
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\Delete.xbf
 C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\Delete.xbf
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\ClassLibrary.dll
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\ClassLibrary.pdb
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\bin\x86\Debug\ClassLibrary.pri
+C:\Users\sara\Documents\GitHub\c-sharp-project\MandatoryProject2\obj\x86\Debug\MandatoryProject2.csproj.GenerateResource.Cache

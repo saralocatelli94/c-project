@@ -1,20 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Xml.Linq;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
-using Windows.UI.Xaml.Navigation;
+
 
 // Il modello di elemento Pagina vuota è documentato all'indirizzo https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,59 +17,34 @@ namespace MandatoryProject2
     /// </summary>
     public sealed partial class SubmissionsView : Page
     {
+
+        ClassLibrary.FileXML fileXML;
         public SubmissionsView()
         {
             this.InitializeComponent();
+            fileXML = ClassLibrary.FileXML.GetInstance(ApplicationData.Current.LocalFolder.Path + "/" + "table.xml", ApplicationData.Current.LocalFolder, "table.xml");
             UserValue.Text = LogIn.user;
             PasswordValue_.Text = LogIn.password;
-            uploadSubmissions();
-            
-
-
-
+            uploadSubmissions();   
         }
 
         public async void uploadSubmissions()
         {
-            string filename = "table.xml";
-            string folder = ApplicationData.Current.LocalFolder.Path;
-            string path = folder + "/" + filename;
-            if (!File.Exists(folder + "/" + filename))
+            if (!fileXML.checkExistence())
             {
                 textb.Text = "There aren't any submissions yet";
                 return;
             }
-            List<string> imageNames = new List<string>();
-            List<string> names = new List<string>();
-            List<string> surnames = new List<string>();
-            List<string> emails = new List<string>();
-            List<string> phNumbers = new List<string>();
-            List<string> dates = new List<string>();
-            List<string> serialNumbers = new List<string>();
-            Grid g = new Grid();
-            using (StreamReader reader = File.OpenText(path))
-            {
-                XDocument xmlFile = XDocument.Load(reader);
-                IEnumerable<XElement> people = xmlFile.Root.Elements();
-                int count = people.Count();
-                if(count==0)
-                {
-                    textb.Text = "There aren't any submissions yet";
-                    return;
-                }
-                foreach (var x in people)
-                {
 
-                    imageNames.Add(x.Element("Image").Value.ToString());
-                    names.Add(x.Element("name").Value.ToString());
-                    surnames.Add(x.Element("surname").Value.ToString());
-                    emails.Add(x.Element("Email").Value.ToString());
-                    phNumbers.Add(x.Element("PhoneNr").Value.ToString());
-                    dates.Add(x.Element("Date").Value.ToString());
-                    serialNumbers.Add(x.Element("SerialNr").Value.ToString());
-                    // Query.Text += x.Element("Image").Value.ToString();
-                }
-                int number = imageNames.Count;
+            Grid g = new Grid();
+           
+            List<ClassLibrary.Person> people = fileXML.getSubmissions();
+            if (people.Count == 0)
+            {
+                textb.Text = "There aren't any submissions yet";
+                return;
+            }
+            int number = people.Count;
                 int pagesNumber = number / 10;
                 if (number % 10 != 0)
                     pagesNumber++;
@@ -94,7 +61,7 @@ namespace MandatoryProject2
 
                     for (int i = j * 10; i < (j * 10) + 10; i++)
                     {
-                        if (i >= imageNames.Count)
+                        if (i >= people.Count)
                             return;
                         Grid grid = new Grid();
                         grid.Height = 250;
@@ -105,7 +72,7 @@ namespace MandatoryProject2
                         image.Width = 240;
                         image.Margin = new Thickness(50, 20, 20, 20);
                         image.VerticalAlignment = VerticalAlignment.Top;
-                        TextBlock name = new TextBlock();
+                        TextBlock name = new TextBlock(); 
                         name.Margin = new Thickness(350, 50, 0, 0);
                         TextBlock nameValue = new TextBlock();
                         nameValue.Margin = new Thickness(420, 50, 0, 0);
@@ -115,6 +82,7 @@ namespace MandatoryProject2
                         surnameValue.Margin = new Thickness(420, 80, 0, 0);
                         TextBlock email = new TextBlock();
                         email.Margin = new Thickness(350, 110, 0, 0);
+                        email.Width = 400;
                         TextBlock emailValue = new TextBlock();
                         emailValue.Margin = new Thickness(420, 110, 0, 0);
                         TextBlock phone = new TextBlock();
@@ -129,6 +97,7 @@ namespace MandatoryProject2
                         serial.Margin = new Thickness(350, 200, 0, 0);
                         TextBlock serialValue = new TextBlock();
                         serialValue.Margin = new Thickness(470, 200, 0, 0);
+                    
                         grid.Children.Add(image);
                         grid.Children.Add(name);
                         grid.Children.Add(surname);
@@ -147,7 +116,7 @@ namespace MandatoryProject2
                         BitmapImage bm = new BitmapImage();
                         StorageFolder sf = ApplicationData.Current.LocalFolder;
 
-                        StorageFile file = await sf.GetFileAsync(imageNames.ElementAt(i));
+                        StorageFile file = await sf.GetFileAsync(people.ElementAt(i).ImagePath);
                         Windows.Storage.Streams.IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.Read);
                         bm.SetSource(stream);
 
@@ -158,24 +127,25 @@ namespace MandatoryProject2
                         phone.Text = "Phone number: ";
                         date.Text = "Date of birth: ";
                         serial.Text = "Serial number:";
-                        nameValue.Text = names.ElementAt(i);
-                        surnameValue.Text = surnames.ElementAt(i);
-                        emailValue.Text = emails.ElementAt(i);
-                        phoneValue.Text = phNumbers.ElementAt(i);
-                        dateValue.Text = dates.ElementAt(i);
-                        serialValue.Text = serialNumbers.ElementAt(i);
+                        nameValue.Text = people.ElementAt(i).Name;
+                        surnameValue.Text = people.ElementAt(i).Surname;
+                        emailValue.Text = people.ElementAt(i).Email;
+                        phoneValue.Text = people.ElementAt(i).PhoneNr;
+                        dateValue.Text = people.ElementAt(i).Date;
+                        serialValue.Text = people.ElementAt(i).SerialNr;
                         image.Visibility = Visibility.Visible;
                         image.Stretch = Stretch.Uniform;
                         image.VerticalAlignment = VerticalAlignment.Center;
-                        l.Items.Add(grid);
-
-
-                    }
-                }
-                
-
+                      //  bm. += new EventHandler(this.button_Click);
+                      
+                     l.Items.Add(grid);
+                  
+                }               
             }
         }
+
+
+  
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

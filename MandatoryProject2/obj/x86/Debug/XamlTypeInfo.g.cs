@@ -132,37 +132,33 @@ namespace MandatoryProject2.MandatoryProject2_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[14];
-            _typeNameTable[0] = "MandatoryProject2._10Submissions";
+            _typeNameTable = new string[12];
+            _typeNameTable[0] = "MandatoryProject2.BlankPage1";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "MandatoryProject2.BlankPage1";
-            _typeNameTable[4] = "MandatoryProject2.Delete";
-            _typeNameTable[5] = "MandatoryProject2.MainPage";
-            _typeNameTable[6] = "wizardcodebehindxmlns.MainPage1";
-            _typeNameTable[7] = "MandatoryProject2.SeeSubmissions";
-            _typeNameTable[8] = "MandatoryProject2.Assets.Controls.FlipViewIndicator";
-            _typeNameTable[9] = "Windows.UI.Xaml.Controls.ListBox";
-            _typeNameTable[10] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[11] = "Windows.UI.Xaml.Controls.FlipView";
-            _typeNameTable[12] = "MandatoryProject2.SubmissionsView";
-            _typeNameTable[13] = "MandatoryProject2.Winner";
+            _typeNameTable[3] = "MandatoryProject2.Delete";
+            _typeNameTable[4] = "MandatoryProject2.MainPage";
+            _typeNameTable[5] = "MandatoryProject2.SeeSubmissions";
+            _typeNameTable[6] = "MandatoryProject2.Assets.Controls.FlipViewIndicator";
+            _typeNameTable[7] = "Windows.UI.Xaml.Controls.ListBox";
+            _typeNameTable[8] = "Windows.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[9] = "Windows.UI.Xaml.Controls.FlipView";
+            _typeNameTable[10] = "MandatoryProject2.SubmissionsView";
+            _typeNameTable[11] = "MandatoryProject2.Winner";
 
-            _typeTable = new global::System.Type[14];
-            _typeTable[0] = typeof(global::MandatoryProject2._10Submissions);
+            _typeTable = new global::System.Type[12];
+            _typeTable[0] = typeof(global::MandatoryProject2.BlankPage1);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::MandatoryProject2.BlankPage1);
-            _typeTable[4] = typeof(global::MandatoryProject2.Delete);
-            _typeTable[5] = typeof(global::MandatoryProject2.MainPage);
-            _typeTable[6] = typeof(global::wizardcodebehindxmlns.MainPage1);
-            _typeTable[7] = typeof(global::MandatoryProject2.SeeSubmissions);
-            _typeTable[8] = typeof(global::MandatoryProject2.Assets.Controls.FlipViewIndicator);
-            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.ListBox);
-            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[11] = typeof(global::Windows.UI.Xaml.Controls.FlipView);
-            _typeTable[12] = typeof(global::MandatoryProject2.SubmissionsView);
-            _typeTable[13] = typeof(global::MandatoryProject2.Winner);
+            _typeTable[3] = typeof(global::MandatoryProject2.Delete);
+            _typeTable[4] = typeof(global::MandatoryProject2.MainPage);
+            _typeTable[5] = typeof(global::MandatoryProject2.SeeSubmissions);
+            _typeTable[6] = typeof(global::MandatoryProject2.Assets.Controls.FlipViewIndicator);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.ListBox);
+            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.FlipView);
+            _typeTable[10] = typeof(global::MandatoryProject2.SubmissionsView);
+            _typeTable[11] = typeof(global::MandatoryProject2.Winner);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -197,15 +193,13 @@ namespace MandatoryProject2.MandatoryProject2_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0__10Submissions() { return new global::MandatoryProject2._10Submissions(); }
-        private object Activate_3_BlankPage1() { return new global::MandatoryProject2.BlankPage1(); }
-        private object Activate_4_Delete() { return new global::MandatoryProject2.Delete(); }
-        private object Activate_5_MainPage() { return new global::MandatoryProject2.MainPage(); }
-        private object Activate_6_MainPage1() { return new global::wizardcodebehindxmlns.MainPage1(); }
-        private object Activate_7_SeeSubmissions() { return new global::MandatoryProject2.SeeSubmissions(); }
-        private object Activate_8_FlipViewIndicator() { return new global::MandatoryProject2.Assets.Controls.FlipViewIndicator(); }
-        private object Activate_12_SubmissionsView() { return new global::MandatoryProject2.SubmissionsView(); }
-        private object Activate_13_Winner() { return new global::MandatoryProject2.Winner(); }
+        private object Activate_0_BlankPage1() { return new global::MandatoryProject2.BlankPage1(); }
+        private object Activate_3_Delete() { return new global::MandatoryProject2.Delete(); }
+        private object Activate_4_MainPage() { return new global::MandatoryProject2.MainPage(); }
+        private object Activate_5_SeeSubmissions() { return new global::MandatoryProject2.SeeSubmissions(); }
+        private object Activate_6_FlipViewIndicator() { return new global::MandatoryProject2.Assets.Controls.FlipViewIndicator(); }
+        private object Activate_10_SubmissionsView() { return new global::MandatoryProject2.SubmissionsView(); }
+        private object Activate_11_Winner() { return new global::MandatoryProject2.Winner(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -217,9 +211,9 @@ namespace MandatoryProject2.MandatoryProject2_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  MandatoryProject2._10Submissions
+            case 0:   //  MandatoryProject2.BlankPage1
                 userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0__10Submissions;
+                userType.Activator = Activate_0_BlankPage1;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -232,71 +226,57 @@ namespace MandatoryProject2.MandatoryProject2_XamlTypeInfo
                 xamlType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  MandatoryProject2.BlankPage1
+            case 3:   //  MandatoryProject2.Delete
                 userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_BlankPage1;
+                userType.Activator = Activate_3_Delete;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  MandatoryProject2.Delete
+            case 4:   //  MandatoryProject2.MainPage
                 userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Delete;
+                userType.Activator = Activate_4_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  MandatoryProject2.MainPage
+            case 5:   //  MandatoryProject2.SeeSubmissions
                 userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_MainPage;
+                userType.Activator = Activate_5_SeeSubmissions;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  wizardcodebehindxmlns.MainPage1
-                userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MainPage1;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 7:   //  MandatoryProject2.SeeSubmissions
-                userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_SeeSubmissions;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 8:   //  MandatoryProject2.Assets.Controls.FlipViewIndicator
+            case 6:   //  MandatoryProject2.Assets.Controls.FlipViewIndicator
                 userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ListBox"));
-                userType.Activator = Activate_8_FlipViewIndicator;
+                userType.Activator = Activate_6_FlipViewIndicator;
                 userType.AddMemberName("FlipView");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  Windows.UI.Xaml.Controls.ListBox
+            case 7:   //  Windows.UI.Xaml.Controls.ListBox
                 xamlType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 10:   //  Windows.UI.Xaml.Controls.ItemsControl
+            case 8:   //  Windows.UI.Xaml.Controls.ItemsControl
                 xamlType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  Windows.UI.Xaml.Controls.FlipView
+            case 9:   //  Windows.UI.Xaml.Controls.FlipView
                 xamlType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  MandatoryProject2.SubmissionsView
+            case 10:   //  MandatoryProject2.SubmissionsView
                 userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_SubmissionsView;
+                userType.Activator = Activate_10_SubmissionsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  MandatoryProject2.Winner
+            case 11:   //  MandatoryProject2.Winner
                 userType = new global::MandatoryProject2.MandatoryProject2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_Winner;
+                userType.Activator = Activate_11_Winner;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
