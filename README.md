@@ -6,7 +6,7 @@ RUN/INSTALL THE APPLICATION
 ---------------------------
 
 It is possible to run the project in two different ways:
-1) Uploading the solution MandatoryProject2.sl in visual studio
+1) Uploading the solution MandatoryProject2.sl in visual studio. IMPORTANT: select debug x86
 2) Installing the UWP on the computer.
 Fot the second option you can find the installer called "Add-AppDevPackage"
 in MandatoryProject2/AppPackages/MandatoryProject2_1.0.5.0_Debug_Test. The installer 
